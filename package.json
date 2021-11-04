@@ -1,0 +1,37 @@
+{
+  "name": "fixbind",
+  "version": "0.0.1",
+  "description": "Bindings fixer for Electron with multiple fallbacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "probs test -w 0",
+    "test-watch": "nodemon --exec npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakobrosenberg/fixbind.git"
+  },
+  "keywords": [
+    "binary",
+    "bin",
+    "binding",
+    "fix",
+    "download",
+    "build"
+  ],
+  "author": "jakobrosenberg@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakobrosenberg/fixbind/issues"
+  },
+  "homepage": "https://github.com/jakobrosenberg/fixbind#readme",
+  "dependencies": {
+    "consolite": "^0.2.7",
+    "electron-rebuild": "^3.2.3",
+    "prebuild-install": "^6.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "probs": "^0.0.2"
+  }
+}
