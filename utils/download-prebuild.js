@@ -24,7 +24,7 @@ const downloadPrebuild = {
       download(url, opts, (err, res) => {
         if (err) {
           console.error(err);
-          throw err;
+          reject(err);
         }
         process.chdir(_pathBak); // restore initial CWD
         _resolve();
