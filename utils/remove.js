@@ -1,5 +1,8 @@
-const { rmSync } = require('fs')
 const { resolve } = require('path')
+const rmSync = require('fs').rmSync || require('fs-extra').removeSync
+
+if (!rmSync)
+    throw new Error('Installed version of Node does not support rmSync. Please install fs-extra.')
 
 const removeBindings = (package, { log }) => {
     try {
