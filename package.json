@@ -1,6 +1,6 @@
 {
   "name": "fixbind",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bindings fixer for Electron with multiple fallbacks",
   "main": "index.js",
   "scripts": {
