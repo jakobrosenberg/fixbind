@@ -27,7 +27,7 @@
   "homepage": "https://github.com/jakobrosenberg/fixbind#readme",
   "dependencies": {
     "consolite": "^0.2.7",
-    "electron-rebuild": "^3.2.3",
+    "electron-rebuild": "^3.2.5",
     "prebuild-install": "^6.1.4"
   },
   "devDependencies": {

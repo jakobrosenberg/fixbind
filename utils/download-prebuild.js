@@ -9,7 +9,7 @@ const downloadPrebuild = {
       const _pathBak = resolve();
 
       // rc has self executing scripts that use the CWD, so we need to change dir first
-      process.chdir(resolve(package.projectPath, "node_modules/@serialport/bindings"));
+      process.chdir(resolve(package.packagePath));
 
       const rc = require("prebuild-install/rc");
 
@@ -26,9 +26,9 @@ const downloadPrebuild = {
           console.error(err);
           reject(err);
         }
-        process.chdir(_pathBak); // restore initial CWD
         _resolve();
       });
+      process.chdir(_pathBak); // restore initial CWD
     } catch (err) {
       reject(err);
     }
